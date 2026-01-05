@@ -1,0 +1,34 @@
+version: 1
+categories:
+  - id: feature
+    name: Feature Development
+    keywords:
+      - feature
+      - add
+      - create
+      - implement
+      - new
+    root_reference: .agents/context/caret-rules.md
+    
+  - id: refactor
+    name: Refactoring
+    keywords:
+      - refactor
+      - improve
+      - clean
+      - optimize
+      - structure
+    root_reference: .agents/context/caret-rules.md
+
+  - id: fix
+    name: Bug Fix
+    keywords:
+      - fix
+      - bug
+      - error
+      - issue
+      - problem
+    root_reference: .agents/context/caret-rules.md
+
+notes:
+  - Add workflow categories and references here.

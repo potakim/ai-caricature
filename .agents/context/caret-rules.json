@@ -1,0 +1,43 @@
+{
+	"project_identity": {
+		"name": "AI Caricature",
+		"symbol": "🎨",
+		"nature": "Next.js 16 Web Application",
+		"philosophy": "Simple, client-side first, rapid iteration with shadcn/ui."
+	},
+	"architecture_rules": {
+		"modification_levels": {
+			"L1_independent": "public",
+			"L2_conditional": "src/components/ui, src/lib",
+			"L3_direct": "src/app"
+		},
+		"protection_rules": {
+			"protected_directories": [
+				".agents/context"
+			],
+			"comment_required": "For complex logic changes in src/app",
+			"max_changes": "Keep changes atomic"
+		}
+	},
+	"ai_workflow": {
+		"knowledge_principle": "AI knowledge = Developer knowledge (1:1 parity)",
+		"mandatory_pre_checks": [
+			"Read caret-rules.json first",
+			"Identify work nature",
+			"Apply minimal-change principles"
+		]
+	},
+	"workflows": {
+		"instruction": "Read workflows on demand. Do not load all at once.",
+		"selection_guide": {
+			"reference": ".agents/context/ai-work-index.yaml",
+			"steps": [
+				"Extract keywords from the user request",
+				"Match the category in ai-work-index.yaml",
+				"Read the matching root quick reference first",
+				"Load the workflow document only if the task still needs details"
+			]
+		},
+		"index": {}
+	}
+}
